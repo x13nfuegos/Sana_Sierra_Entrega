@@ -4,26 +4,24 @@ html, body {
   margin: 0;
 }
 
-@media (max-width: 992px) {
-  .alto-100 {
-    height: 100vh;
-    padding: 90vh;
-  }
-}
+/*Fondo Color*/
 .fondo {
   background-color: #83DE00;
 }
 
-.iconos_centrados {
-  flex-direction: row;
-}
-
-body {
+/*Fondo Papel*/
+.fondo_papel {
   background-image: url(../img/musica_bg.jpg);
   background-repeat: repeat;
-  background-size: auto;
 }
 
+.fondo_form {
+  background-image: url(../img/portada_03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Tarjetas seccion NOSOTRES*/
 .texto_centrado {
   margin-top: 20pxo;
   margin-bottom: 20px;
@@ -127,71 +125,78 @@ body {
   background-size: cover;
 }
 
+/* Tarjetas FECHAS*/
 .wrapper {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
+
 .box {
-	display: flex;
-	width: 950px;
-	margin: 140px auto;
-  
+  display: flex;
+  width: 950px;
+  margin: 140px auto;
 }
+
 .single-box {
-	width: 300px;
-	background: #fff;
-	margin-right: 20px;
-	padding: 25px;
-	text-align: center;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	position: relative;
+  width: 300px;
+  background: #fff;
+  margin-right: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
   border-radius: 10px;
 }
+
 .single-box:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
+
 .single-box .img img {
-	width: 200px;
-	margin-bottom: 30px;
+  width: 200px;
+  margin-bottom: 30px;
   border-radius: 30px;
 }
+
 .img {
-	position: absolute;
-	top: -50%;
-	left: 20%;
+  position: absolute;
+  top: -50%;
+  left: 20%;
 }
-.single-box h3 {
-	margin-top: 25%;
-	margin-bottom: 15px;
+
+.single-box h3, .single-box .h3 {
+  margin-top: 25%;
+  margin-bottom: 15px;
 }
+
 .single-box p {
-	line-height: 1;
+  line-height: 1;
 }
 
-@media(max-width:991px) {
-	.box {
-		width: 100%;
-	}
+@media (max-width: 991px) {
+  .box {
+    width: 100%;
+  }
 }
-@media (max-width:767px) {
-	.box {
-		width: 100%;
-		flex-direction: column;
-	}
-	.single-box {
-		margin-right: 0;
-		width: 100%;
-		margin-bottom: 110px;
-	}
+@media (max-width: 767px) {
+  .box {
+    width: 100%;
+    flex-direction: column;
+  }
+  .single-box {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 110px;
+  }
 }
-
-.gallery{
-	padding: 80px 0px;
-}
-img{
-	max-width: 100%;
+/* Galeria MULTIMEDIA*/
+.gallery {
+  padding: 80px 0px;
 }
 
+img {
+  max-width: 100%;
+}
 
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
@@ -4510,6 +4515,8 @@ textarea.form-control-lg {
 .card-img-top,
 .card-img-bottom {
   width: 100%;
+
+
 }
 
 .card-img,
@@ -4534,7 +4541,7 @@ textarea.form-control-lg {
   }
   .card-group > .card {
     flex: 1 0 0%;
-    margin-bottom: 0;
+    margin-bottom: auto;
   }
   .card-group > .card + .card {
     margin-left: 0;
